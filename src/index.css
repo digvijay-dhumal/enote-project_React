@@ -1,0 +1,146 @@
+@import "@progress/kendo-font-icons/dist/index.css";
+@import "./styles/fonts.css";
+
+:root {
+  --primary-color: #034ea1;
+  --secondary-color: #fff100;
+  --background-color-1: #fdf4b1;
+  --background-color-2: #fffbd7;
+  --font-color: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Segoe UI';
+}
+
+code {
+  font-family: 'Segoe UI';
+}
+
+.k-appbar {
+  box-shadow: none !important;
+}
+
+label {
+  color: var(--font-color);
+}
+
+.list-item:hover {
+  background-color: #dee2e6;
+
+}
+
+.overflow-hidden {
+  overflow-y: hidden !important;
+
+  .FormMaincontainer {
+    opacity: 0.3
+  }
+}
+
+.k-expander-title {
+  position: relative;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.k-expander-title::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0; /* Position the underline at the bottom of the text */
+  left: 50%;
+  transform: translateX(-50%); /* Center the underline horizontally */
+  background-color: var(--font-color); /* Set the color of the underline */
+  transition: width 0.3s ease;
+}
+
+.k-expander-title:hover::before {
+  width: 100%;
+}
+
+.list-item {
+  position: relative;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 8px 0px 8px 30px;
+}
+
+.list-item::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0; /* Position the underline at the bottom of the text */
+  left: 50%;
+  transform: translateX(-50%); /* Center the underline horizontally */
+  background-color: var(--font-color); /* Set the color of the underline */
+  transition: width 0.3s ease;
+}
+
+.list-item:hover::before {
+  width: 100%;
+}
+
+.faded-card {
+  opacity: 0.6;
+}
+
+.k-grid {
+  color: var(--font-color) !important
+}
+
+.selected-row {
+  background-color: #fdf4b1;
+}
+
+/* File Upload*/
+.Attachemntfileinfo-ind {
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+.attachemntIconInfoConationer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AttchemntIconWraper {
+  display: flex;
+  align-items: center;
+  gap: 3px
+}
+
+.AttchemntIconWraperCancel {
+  font-size: larger;
+  font-weight: 500;
+  color: #424242a8;
+  cursor: pointer;
+}
+
+.attachemnrt-warningifoConatiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.attachemnrt-warningifo-fileinfo {
+  height: 17px;
+}
+
+.sideBarmenuCloseIc {
+  background-color: #fff100;
+  border-radius: 50%;
+  padding: 12px;
+  color: #034ea1;
+  margin-left: 4px;
+}

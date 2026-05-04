@@ -1,0 +1,174 @@
+.ibNavbar {
+  background-color: #034ea1;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.left-section img {
+  width: 130px;
+}
+
+.center-section p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.right-section p {
+  color: #fff;
+  margin: 0 10px 0 0;
+}
+
+.right-section img {
+  margin: 0 10px 0 0;
+  width: 25px;
+  height: 25px;
+}
+
+.logOut {
+  background-color: #fff100;
+  font-weight: 600;
+  border-color: rgba(0, 0, 0, 0.08);
+  color: var(--font-color);
+}
+
+.logOut:hover {
+  background-color: #fff100;
+  color: var(--font-color);
+}
+
+.overlayLoader {
+  background: none repeat scroll 0 0 black;
+  position: fixed;
+  display: flex;
+  opacity: 0.7;
+  z-index: 1000001;
+  left: 0;
+  top: 0;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideBarContainer {
+  overflow: auto;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  width: 20%;
+  background: #f5f5f5;
+  padding-top: 20px
+}
+
+.sideBarClose {
+  padding-top: 20px;
+  position: absolute;
+  z-index: 1
+}
+
+/* 404 page styling */
+.centerAlign404 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container404 {
+  height: 100vh;
+  text-align: center;
+}
+
+.icon404 {
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+/* footer container 404 */
+.footer404 {
+  position: fixed;
+  bottom: 0;
+  clear: both;
+  width: 100%;
+  bottom: 0;
+}
+
+.homeLink {
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.menu-container {
+  position: relative;
+  top: 5px;
+}
+
+ .menu-container ul {
+   margin-left: -4px;
+ }
+
+.menu-container li span{
+  color: #034ea1;
+}
+
+/* Style for menu items */
+.menu-container .k-menu-item {
+  padding: 2px; /* Adjust the padding as needed */
+}
+
+.menu-container .k-menu-group {
+  padding: 2px;
+  background-color: #f9f9f9; 
+  border-radius: 5px; 
+}
+
+.menu-container .k-menu-popup {
+  left: auto !important; 
+  right: 0; 
+}
+
+/* Style for active or hovered menu items */
+.menu-container .k-menu-item:hover,
+.menu-container .k-menu-item.k-state-selected {
+  background-color: #e6e6e6;
+  border-radius: 5px;
+}
+
+.k-menu-group .k-item > .k-link:active, .k-menu-group .k-item > .k-link.k-active, .k-menu-group .k-item > .k-link.k-selected, .k-menu.k-context-menu .k-item > .k-link:active, .k-menu.k-context-menu .k-item > .k-link.k-active, .k-menu.k-context-menu .k-item > .k-link.k-selected {
+  background-color: transparent !important;
+  color: #034ea1 !important;
+}
+
+/* Base styles for the submenu items */
+.k-menu-group .k-item > .k-link {
+  position: relative;
+  color: #034ea1 !important; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+  padding: 10px !important;
+}
+
+/* Add the hover underline effect with ::after */
+.k-menu-group .k-item > .k-link::after {
+  content: '';
+  position: absolute;
+  left: 50%; 
+  bottom: 0;
+  width: 0; /* Initially zero width */
+  height: 2px; /* Thickness of the underline */
+  background-color: #000; /* Color of the underline */
+  transition: all 0.3s ease; /* Smooth transition for the effect */
+  transform: translateX(-50%); /* Align it to the center */
+}
+
+/* On hover, expand the underline from the center */
+.k-menu-group .k-item > .k-link:hover::after {
+  width: 100%; /* Expand the underline to full width */
+  left: 50%; /* Ensure it expands from the center */
+  transform: translateX(-50%); /* Keep it centered */
+}

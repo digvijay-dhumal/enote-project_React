@@ -1,0 +1,451 @@
+.chatbot-prompts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 per row */
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.chatbot-prompt-btn {
+  padding: 8px 12px;
+  background: #f5f7fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.chatbot-prompt-btn:hover {
+  background: #e9eef3;
+}
+
+.chatbot-prompt-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Floating toggle chat button */
+.chatbot-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #034ea1;
+  color: white;
+  border: none;
+  padding: 15px 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* Main panel sliding from right */
+.chatbot-panel {
+  position: fixed;
+  top: auto;
+  /* remove top alignment */
+  bottom: 0;
+  /* align at bottom */
+  right: -350px;
+  width: 350px;
+  height: 60vh;
+  /* <— 50% of viewport height */
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s ease;
+  z-index: 9998;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.chatbot-panel.open {
+  right: 0;
+}
+
+/* Header */
+.chatbot-header {
+  padding: 15px;
+  background: #034ea1;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
+  /* puts title left and X on right */
+  align-items: center;
+  /* vertically aligns both */
+}
+
+.chatbot-close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+
+/* Messages section */
+.chatbot-messages {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f6f7fb;
+}
+
+.chatbot-message {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  max-width: 100%;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.chatbot-message.user {
+  background: #d1ebff;
+  align-self: flex-end;
+}
+
+.chatbot-message.bot {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  align-self: flex-start;
+  margin-top: 33px;
+}
+
+/* Input row */
+.chatbot-input-row {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.chatbot-input-row input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chatbot-input-row button {
+  margin-left: 8px;
+  padding: 8px 14px;
+  background: #034ea1;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-btn {
+  margin-left: 8px;
+  background: #034ea1;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.send-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.chatbot-action-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.approve-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 4px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reject-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* .summary-btn {
+  background: #fff100;
+  color: #000;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+.summary-btn {
+  background-color: #034ea1;
+  color: #ffffff;
+  border: none;
+
+  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 500;
+
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1.2;   /* cleaner center */
+  white-space: nowrap;
+}
+
+/* ===== Summary Modal ===== */
+
+/* .summary-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+} */
+
+.summary-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 20;
+}
+
+
+.summary-modal {
+  /* width: 380px; */
+  width: 80%;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.summary-modal-header {
+  background: #034ea1;
+  color: #ffffff;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.summary-close-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.summary-modal-body {
+  padding: 10px;
+  color: #333;
+  line-height: 1.5;
+  max-height: 220px;
+    overflow: auto;
+}
+
+.summary-modal-footer {
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #e0e0e0;
+}
+
+
+.approve-btn:hover {
+  opacity: 0.9;
+}
+
+.reject-btn:hover {
+  opacity: 0.9;
+}
+
+.chatbot-new-chat-btn {
+  background: transparent;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  line-height: 1;
+  float: right;
+} 
+
+.chatbot-table td {
+  vertical-align: middle;   /* vertical center */
+}
+
+.chatbot-table td:last-child {
+  text-align: center;       /* horizontal center for Summary column */
+}
+
+
+/* Approve/Reject Table Styles */
+/* .chatbot-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 14px;
+} */
+
+/* .chatbot-table th {
+  background-color: #f0f0f0;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+} */
+
+/* .chatbot-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+} */
+
+/* //backup */
+/* .action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+} */ 
+
+.action-icons-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.action-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.action-icon-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.action-icon-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.action-icon-btn.summary-btn .action-icon {
+  color: #2196F3; /* Blue for summary */
+}
+
+.action-icon-btn.approve-btn .action-icon {
+  color: #4CAF50; /* Green for approve */
+}
+
+.action-icon-btn.reject-btn .action-icon {
+  color: #f44336; /* Red for reject */
+}
+
+/* Add tooltip styles if needed */
+.action-icon-btn {
+  position: relative;
+}
+
+.action-icon-btn:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 8px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+/* Modal Styles */
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 3px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 28px;
+}
+
+.confirm-btn {
+  background-color: #034ea1;
+  color: white;
+  border: none;
+  padding: 3px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 28px;
+}
+
+.comment-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.comment-preview {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  border: 1px solid #dee2e6;
+}

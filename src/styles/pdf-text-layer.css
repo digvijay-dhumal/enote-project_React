@@ -1,0 +1,94 @@
+/* PDF Text Layer Styles - Critical for selection */
+.pdf-text-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  opacity: 0.8;
+  pointer-events: auto !important;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  z-index: 10;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  transform-origin: 0 0;
+  cursor: text;
+}
+ 
+.pdf-text-layer span {
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0 0;
+  pointer-events: auto !important;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  background-color: transparent !important;
+  color: rgba(0, 0, 0, 0.01) !important;
+ 
+  /* IMPORTANT */
+  line-height: normal !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+ 
+.pdf-text-layer span::selection {
+  background: rgba(22, 93, 236, 0.618) !important;
+  color: transparent !important;
+}
+ 
+.pdf-text-layer span::-moz-selection {
+  background: rgba(22, 93, 236, 0.618) !important;
+  color: transparent !important;
+}
+ 
+.pdf-page-container {
+  position: relative;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: fit-content;
+  min-width: fit-content;
+}
+ 
+.pdf-page-container canvas {
+  position: relative;
+  z-index: 1;
+  display: block;
+  pointer-events: none;
+}
+ 
+.pdf-page-container .pdf-text-layer {
+  z-index: 10;
+}
+ 
+.pdf-highlight-overlay {
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+}
+ 
+.pdf-text-layer .endOfContent {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  cursor: default;
+  user-select: none;
+}
+ 
+.pdf-page-container,
+.pdf-page-container * {
+  caret-color: black !important;
+}

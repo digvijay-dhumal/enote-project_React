@@ -1,0 +1,218 @@
+.ShowSearchExport {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+}
+
+.ShowSearchExport input {
+  border-radius: 3px;
+  border: 1px solid #BFBFBF;
+  padding: 8px;
+  width: 25%;
+}
+
+.Show {
+  color: #817b7b;
+  display: flex;
+  width: 50%;
+}
+
+.Show Button {
+  margin-left: 20px;
+  width: 100px;
+}
+
+.Show span {
+  padding: 8px;
+}
+
+.Show select {
+  background-color: #F0F8FF;
+  border: none;
+  border-radius: 3px;
+}
+
+.k-grid {
+  border: 1px solid #BFBFBF
+}
+
+.BottomGrid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BottomGrid>div:first-child {
+  align-items: center;
+  display: flex;
+  color: #817b7b;
+}
+
+.pagination {
+  text-decoration: none;
+  display: inline-flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.pagination li {
+  border: none;
+  background-color: #F0F8FF;
+  border-radius: 3px;
+  padding: 8px;
+  margin-right: 3px;
+
+}
+
+.custom-title {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-title::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #2196F3;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom right;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.custom-title:hover::after {
+  width: 100%;
+  transform-origin: bottom left;
+}
+
+.expand-panel:hover .custom-title::after {
+  width: 100%;
+}
+
+.expansionpanellist {
+  list-style: none;
+  margin-top: 0px;
+}
+
+.expansionpanellist li {
+  padding: 5px;
+}
+
+.Homebtn {
+  width: 50px;
+}
+
+.pgTitleContainer {
+  margin: 20px 0;
+}
+
+.pgCstLoader {
+  text-align: center;
+  margin: auto;
+}
+
+.k-grid .k-grid-header .k-table-th {
+  font-weight: 600;
+}
+
+.datagridPghdrBtns {
+  width: 100%;
+  padding: 14px 0px 0px 0px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 12px;
+}
+
+.searchNoteContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  margin-bottom: 30px
+}
+
+.searchNoteBtns {
+  background-color: #034ea1;
+  color: #fff;
+}
+
+.searchNoteBtns:hover {
+  background-color: #034ea1;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.landingPgTopBtncontent {
+  color: #333333;
+  margin-left: 8px;
+  width: 25px;
+  height: 25px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: #fff100;
+  margin: auto;
+}
+
+.landingPgTopBtn {
+  text-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.cstGridlandPgStyles {
+  height: 63vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.cstGridStyles {
+  height: 72vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.pgFooterContainer {
+  position: fixed;
+  bottom: 0;
+  clear: both;
+  width: 100%;
+  bottom: 0;
+  /* z-index: 9999; */
+}
+
+.searchBtnStyles {
+  margin-right: 4px;
+}
+
+.landingPgTopBtnRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cstGridStylesForAdmin {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+.cstGridStylesForAdmin .k-grid-content {
+  overflow-y: hidden !important;
+}
+
+/* Adjust grid styles for mobile view */
+@media screen and (max-width: 768px) {
+  .k-grid-sm td,
+  .k-grid-sm th {
+    width: 100px;
+  }
+}

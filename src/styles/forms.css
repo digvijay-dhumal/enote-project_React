@@ -1,0 +1,1042 @@
+.required-asterisk {
+  color: red;
+  margin-left: 4px;
+}
+
+.FormMaincontainer {
+  margin: auto 47px;
+}
+
+.viewformContainer {
+  margin: auto 4px !important;
+  overflow: hidden !important;
+}
+
+.FormHead {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.HeaderButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 14px 0px 0px;
+}
+
+.SectionRowForPowerBIReports {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.SectionHeadsDashBoard {
+  border-radius: 10px;
+  color: #7731a3;
+  font-weight: 400;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.HeaderButtonsContainer Button {
+  width: 400px;
+}
+
+.HeaderButtons {
+  background-color: #034ea1;
+  color: #fff;
+  width: 400px;
+}
+
+.SectionHeads {
+  border-radius: 10px;
+  background-color: #034ea1;
+  color: #fff;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 10px !important;
+  margin-bottom: 12px;
+}
+
+.SectionRow-eNote-ViewFrom {
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.FormButtonsContainer {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.FormButtons {
+  background-color: #023E8A;
+  color: #fff;
+}
+
+.FormButtons:hover {
+  background-color: #023E8A;
+  color: #fff;
+}
+
+.k-label {
+  color: #333333;
+}
+
+.k-input-value-text {
+  color: #333333;
+}
+
+.attachemntIconInfoConationer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formBtnColor {
+  background-color: #023E8A;
+  color: #fff
+}
+
+.formBtnColor:hover {
+  background-color: #023E8A;
+  color: #fff
+}
+
+.homepageHead {
+  margin: 10px 0px;
+}
+
+.homesection-1 {
+  width: 65%;
+  /* padding: 0 10px; */
+  position: relative;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.k-expander-header {
+  background-color: aliceblue;
+}
+
+.k-expander-title {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.k-expanded,
+.k-expander {
+  margin-top: 0px !important;
+}
+
+.k-toolbar {
+  background-color: aliceblue;
+}
+
+.k-button-solid-base.k-selected {
+  display: none;
+}
+
+.callbackcloseButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.callbackButton {
+  background: #023E8A;
+  color: #fff;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.close {
+  background-color: rgb(147, 144, 144);
+  color: black;
+  font-weight: bold;
+}
+
+.Attachemntfileinfo-ind {
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+.AttchemntIconWraper {
+  display: flex;
+  align-items: center;
+  gap: 3px
+}
+
+.AttchemntIconWraperCancel {
+  font-size: larger;
+  font-weight: 500;
+  color: #424242a8;
+  cursor: pointer;
+}
+
+.general-comments-pageNo {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid #dddddddd;
+  outline: none;
+}
+
+.general-comments-DocRef {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid #dddddddd;
+  outline: none;
+}
+
+.general-comments-Comments {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #dddddddd;
+  outline: none;
+}
+
+.eNote-ApprovalButton {
+  margin: 2px 6px;
+}
+
+.approveralButton-ibdAprbtns {
+  background: #023E8A;
+  color: #fff;
+  width: 100px;
+  margin-right: 10px;
+}
+
+table {
+  width: 100%
+}
+
+.viewHeader {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.errorMsg {
+  color: #f31700;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px
+}
+
+.formHeaderTiles {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #034ea1;
+  padding: 8px;
+  color: #fff;
+  width: 30%
+}
+
+.notifyDailogOkBtn {
+  background-color: #034ea1;
+  max-width: 30%;
+  color: #fff;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.notifyDailogOkBtn:hover {
+  background-color: #034ea1;
+  color: #fff;
+}
+
+.approvalAction-foreNoteForm-contaioner {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin: 20px 0px;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.SectionHeads-viewForm {
+  border-radius: 10px;
+  background-color: #034ea1;
+  color: #fff;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+}
+
+.cstformHdrLeftContainer {
+  width: 33%;
+  text-align: left;
+}
+
+.cstformHdrMiddleContainer {
+  width: 33%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cstformHdrRightContainer {
+  width: 33%;
+  text-align: right;
+}
+
+.ApproverSectTblHdrStyle {
+  font-weight: 600;
+  color: #333333;
+}
+
+.ApproverSectTblHdrStyleSno {
+  width: 10%;
+}
+
+.ApproverSectTblHdrStyleMid {
+  width: 80%;
+}
+
+.ApproverSectTblHdrStyleAct {
+  width: 10%;
+}
+
+.addReferee-label-ChangeApprover-label {
+  width: 500px;
+  padding: 5px;
+  margin: 0px 25px;
+}
+
+.approvalAction-foreNoteForm-container {
+  display: flex;
+  gap: 30px;
+  margin: 8px 0px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.approvalform-tableCol-width-10 {
+  width: 100%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-9 {
+  width: 90%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-8 {
+  width: 80%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-7 {
+  width: 70%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-6 {
+  width: 50%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+  word-wrap: break-word;
+}
+
+.attachment_warn {
+  width: 250px;
+}
+
+.approvalform-tableCol-width-4 {
+  width: 40%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-action {
+  width: 11%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-actiondate {
+  width: 10%;
+  max-width: 90px;
+  word-wrap: break-word;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-ActionBy {
+  width: 10%;
+  max-width: 90px;
+  word-wrap: break-word;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-3 {
+  width: 30%;
+  max-width: 90px;
+  word-wrap: break-word;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-Comments {
+  width: 40%;
+  max-width: 90px;
+  word-wrap: break-word;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.approvalform-tableCol-width-2 {
+  width: 20%;
+  max-width: 80px;
+  word-wrap: break-word;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+  font-weight: 600;
+}
+
+.approvalform-tableCol-width-2 button {
+  font-size: 13px;
+  width: 68px;
+}
+
+.k-expander-content {
+  font-weight: 600;
+}
+
+.approvalform-tableCol-width-1 {
+  width: 10%;
+  max-width: 80px;
+  word-wrap: break-word;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+  font-weight: 600;
+}
+
+.attachemnrt-warningifoConatiner {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-width: 100px;
+}
+
+.attachemnrt-warningifo-fileinfo {
+  height: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.k-form-label {
+  font-weight: 500;
+}
+
+.ib-forms-custom-table>th,
+td {
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.allIconsforPrimary-btn {
+  margin-top: -1px;
+  margin-right: 4px;
+}
+
+.atrFormBtnStyles {
+  margin-right: 4px;
+}
+
+.cstATRForm label {
+  font-weight: 500
+}
+
+.cstATRFormTbl th {
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.tableStyle {
+  padding: 3px 0px 3px 5px;
+}
+
+/* Added this message based on change happend due to loading impact users will be filtered on search box enter - 22/03 */
+.cstUserSearchMsg {
+  padding: 0;
+  font-size: 10px;
+  font-style: italic;
+  color: #034ea1;
+  margin-bottom: 4px;
+}
+
+.cstDisableGridScroll .k-grid-content {
+  overflow-y: hidden !important;
+}
+
+.k-grid-header,
+.k-grid-footer {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: inherit;
+  flex: 0 0 auto;
+}
+
+.k-grid .k-grid-md {
+  height: auto;
+}
+
+.k-grid tr,
+td {
+  border: 1px solid #BFBFBF;
+}
+
+.cstDailogValidmsg {
+  margin: 10px;
+  text-Align: center;
+  width: 500px;
+}
+
+.enote-Assignees-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.homepageContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.homesectionPdf-1 {
+  display: none;
+}
+
+.homesection-2 {
+  width: 35%;
+  height: 80vh;
+  position: relative;
+  margin: 0 5px 10px 20px;
+}
+
+.homesectionPdf-2 {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  border: 1px solid #00000030;
+}
+
+.pdfHideandShowIcons {
+  border-radius: 50%;
+  color: #034ea1;
+  margin-left: 4px;
+  position: absolute;
+  right: -72px
+}
+
+.pdfHideIcons {
+  border-radius: 50%;
+  color: #034ea1;
+  margin-left: 4px;
+  position: absolute;
+  right: -27px
+}
+
+.fullScreen {
+  font-size: 11px;
+  width: 64px;
+}
+
+.SectionRow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #00000030 !important;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.approvalform-tableCol-width-5 {
+  width: 30%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+  padding-right: 5px;
+  word-wrap: break-word;
+  font-weight: 600;
+}
+
+.approvalform-tableCol-width-11 {
+  width: 70%;
+  padding-left: 5px;
+  text-align: left;
+  border: 1px solid #dddddd;
+  padding-right: 5px;
+  word-wrap: break-word;
+  font-weight: 600;
+}
+
+.link-style {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-style:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* home icon css styles */
+.homeButtonContainer {
+  position: absolute;
+  padding-top: 4.5%;
+  padding-left: 32px;
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.homeIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.homeTooltip {
+  visibility: hidden;
+  width: 130px;
+  font-size: 14px;
+  background-color: #F5F5F5;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  margin-left: 30px;
+}
+
+.homeButton:hover .homeTooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.homeTooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -4px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #F5F5F5 transparent transparent;
+}
+
+/*  Naren */
+.viewFormSection-2 {
+  width: 50%;
+  height: 85vh;
+  position: relative;
+}
+
+.viewFormSection-1 {
+  width: 50%;
+  position: relative;
+}
+
+.viewFormhomepageContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.dialogcontent_ {
+  margin: 25px;
+  text-align: center !important;
+  width: 500px;
+}
+
+._atrAssineesCombobox {
+  width: 100%;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.searchCSS {
+  border: 2px solid #ccc;
+  box-shadow: inset 0px 0px 0.5px 0px rgba(0, 0, 0, 0.0.1);
+  width: 170px !important;
+  height: 30px;
+  margin-right: 10px;
+}
+
+._markInfocontainer {
+  display: flex;
+  gap: 10px;
+}
+
+._markinfoCombobox {
+  width: 100%;
+  margin-right: 5px;
+}
+
+._mobileResponsive {
+  display: none;
+}
+
+.non_mobileResponsive {
+  margin: 4px;
+}
+
+.generalPadding {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+._searchInput {
+  border: 2px solid #ccc;
+  box-shadow: inset 0px 0px 0.5px 0px rgba(0, 0, 0, 0.1);
+  width: 170px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+._ATRFieldErrorMsg {
+  color: #f31700;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+._atrFormActionBtn {
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.inCorrectFileError {
+  color: red;
+  font-size: 10px;
+}
+
+._fileFormatHintMsg {
+  text-align: right;
+  color: green;
+}
+
+._multipledocUploadWidth {
+  width: 95px;
+}
+
+._valueRender {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+._approverDetailsDiv {
+  display: flex;
+  margin-bottom: 5px;
+  padding-left: 0px;
+}
+
+._reviewerDetailsDiv {
+  display: flex;
+  justify-content: right;
+  margin: 5px;
+}
+
+._reviewerDetailsCol {
+  display: flex;
+  margin-bottom: 10px;
+  padding-left: 0px;
+}
+
+._ConvertPDFToBase64 {
+  width: 90px;
+}
+
+._cstDialogDiv {
+  text-align: left;
+}
+
+._cstDialogDivp {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+._cstDialogDivUl {
+  padding: 2% 3%;
+}
+
+._cstDialogDivUlli {
+  margin-bottom: 5px;
+}
+
+.containerUnAuthoized {
+  height: 85vh;
+  text-align: center;
+}
+
+.centerAlignUnAuthoized {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.viewFormSection-1 .k-expander {
+  border: 1px solid #00000030 !important;
+}
+
+.largeScreen {
+  max-width: 1505px;
+}
+
+.containerWidth {
+  max-width: 1410px;
+}
+
+.gist_dialogcontent_ {
+  margin: 25px;
+  text-align: center !important;
+  width: 1300px;
+  height: 500px;
+}
+
+.dialogCloseGist,
+.dialogCloseGist:hover {
+  max-width: 13%;
+  background-color: #034ea1;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.k-switch-on .k-switch-track {
+  border-color: #034ea1 !important;
+  color: white;
+  background-color: #034ea1 !important;
+}
+
+._pdfDiv {
+  box-shadow: 0 6px 8px #00000014, 0 4px 16px #0000001f;
+  display: table;
+  align-content: center;
+  margin: 10px auto;
+  overflow: auto !important;
+}
+
+._pdfDivGist {
+  box-shadow: 0 6px 8px #00000014, 0 4px 16px #0000001f;
+  align-content: center;
+  margin: 10px auto;
+}
+
+.gist_toolbar {
+  position: sticky;
+}
+
+.searchValidationCss {
+  display: block;
+}
+
+.atrTypeStyle {
+  display: flex;
+}
+
+.atrTypeStyle label {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.atrTypeStyle .k-radio:checked,
+.k-radio.k-checked {
+  border-color: #034ea1 !important;
+  color: white;
+  background-color: #034ea1 !important;
+}
+
+.atrTypeStyle .k-radio:checked:focus,
+.k-radio.k-checked.k-focus {
+  box-shadow: 0 0 0 2px rgba(88, 91, 255, 0.3);
+}
+
+.ATRcloseDropdown {
+  display: flex;
+  width: 300px;
+  position: relative;
+  top: -50px;
+}
+
+.ATRsave {
+  margin-left: 10px;
+}
+
+.atrTypeStyle .k-radio {
+  border-color: #00000073 !important;
+  background-color: #ffffff;
+}
+
+.atrCloseMenu {
+  position: relative;
+  top: -65px;
+  margin-bottom: 3%;
+}
+
+.atrStyle {
+  display: flex;
+  align-items: center
+}
+
+.atrClosuredrop {
+  margin-right: 10px;
+  width: 200px
+}
+
+.non_mobileResponsive_menu {
+  display: block;
+  margin: 0px !important;
+  padding: 2px;
+}
+
+._mobileResponsive_mobile {
+  display: none;
+}
+
+._departmentBorder {
+  border: none;
+}
+
+._render-custon-title {
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+._ExpansionPanel {
+  display: flex;
+}
+
+._Attachemntfileinfo_multiple {
+  width: 92px;
+}
+
+._note_number {
+  color: red !important;
+}
+
+._exportdiv {
+  margin-left: 5px;
+}
+
+._search_div {
+  margin-bottom: 40px;
+}
+
+/* .gist_dialogcontent_content .k-dialog-content{
+  overflow-y: hidden;
+} */
+.rpv-default-layout__toolbar {
+  background-color: #f0f8ff !important;
+}
+
+.rpv-core__textbox {
+  height: 1.5rem !important;
+  width: 90% !important;
+}
+
+
+.rpv-core__tooltip-body {
+  font-size: 10px;
+  max-width: 5rem !important;
+}
+
+.rpv-core__tooltip-body-content {
+  padding: 3px !important;
+}
+
+/* .gist_dialogcontent_content .k-prompt-container, .k-window-content {
+    background: none;
+    border-color: inherit;
+    border-width: 0;
+    color: inherit;
+    flex: 1 1 auto;
+    outline: 0;
+    overflow: auto;
+    padding-block: 16px;
+    padding-inline: 16px;
+    position: relative;
+
+    scrollbar-width: none;         
+    -ms-overflow-style: none;      
+}
+
+.gist_dialogcontent_content .k-prompt-container::-webkit-scrollbar,
+.gist_dialogcontent_content .k-window-content::-webkit-scrollbar {
+    display: none;               
+} */
+
+.tatButton {
+  float: right;
+  margin-top: -13px;
+}

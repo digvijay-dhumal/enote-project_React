@@ -1,0 +1,177 @@
+.section-1 {
+  background: #F0F8FF;
+}
+
+.section-1a {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8%;
+  padding: 20px 0px;
+}
+
+@media only screen and (max-width: 778px) {
+  .section-1a {
+    flex-direction: column;
+  }
+
+  .section-1b {
+    max-width: 100% !important;
+  }
+
+  .section-1c {
+    max-width: 100% !important;
+  }
+}
+
+.section-1c img {
+  width: 400px;
+}
+
+.section-1b Button {
+  background: #023E8A;
+  color: #fff;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8%;
+  padding: 40px 0px;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    width: 100%; /* Set the width to 100% on smaller screens */
+  }
+}
+
+.custom-card:hover {
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 50%);
+}
+
+.full-width-button {
+  background: #023E8A;
+  color: #fff;
+}
+
+.full-width-button:hover {
+  font-weight: bold;
+  color: #023E8A;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 6%;
+  padding: 50px 0px;
+}
+
+.section-3 Button {
+  background-color: #FFFF00;
+  border-radius: 10px 10px 10px 0px;
+  font-weight: bold;
+}
+
+.section-3 Button:hover {
+  background-color: #FFFF00;
+}
+
+.feedbackbuttons-container {
+  position: absolute;
+  top: 38%;
+  right: 0;
+}
+
+.contactbuttons-container {
+  position: absolute;
+  top: 45%;
+  right: 0;
+
+}
+
+.contact-button,
+.feedback-button {
+  background-color: #fff;
+}
+
+.contact-button img,
+.feedback-button img {
+  width: 25px;
+  height: 25px;
+}
+
+.button-text {
+  vertical-align: super;
+  font-weight: bold;
+}
+
+.feedback-button {
+  border-right: none;
+}
+
+.button {
+  background-color: #fff;
+  color: white;
+  text-decoration: none;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  width: auto;
+  max-width: 50px;
+  /** I'm animating max-width because width needs to be auto, and auto can't be animated **/
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+  border: none;
+}
+
+.button:hover {
+  max-width: 300px;
+}
+
+.icon {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  white-space: nowrap;
+  padding-right: 15px;
+  color: #000;
+}
+
+.ebuttons:hover {
+  color: #023E8A;
+}
+
+.section-1b p {
+  line-height: 1.8;
+  align-items: center;
+  display: flex;
+}
+
+.img_archival {
+  width: 81%;
+}
+
+.section-1b {
+  max-width: 50%;
+}
+
+.section-1c {
+  min-width: 34%;
+}
+
+.custom-card {
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
+  transition: box-shadow 0.3s ease-in-out;
+  width: 90%;
+  height: 285px;
+}
+
+.custom-cardimg {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+}

@@ -1,0 +1,821 @@
+/* Portrait View (Left Navigation) */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    ._mobileResponsive_mobile {
+        display: block !important; /* Show left navigation */
+    }
+
+    .non_mobileResponsive_menu {
+        display: none !important; /* Hide top navigation */
+    }
+}
+
+/* Landscape View (Top Navigation) */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .non_mobileResponsive_menu {
+        display: block !important;  /* Show top navigation */
+    }
+
+    ._mobileResponsive_mobile {
+        display: none !important;  /* Hide left navigation */
+    }
+
+    .menu-container {
+        position: relative;
+        top: 0px !important;
+        left: -27px !important;
+        margin: 10px !important;
+        height: 20px;
+    }
+
+    .non_mobileResponsive {
+        margin: 0 !important;
+    }
+    .searchMobileView {
+        width: 800px !important;
+    }
+}
+
+/* Portrait View (Left Navigation) */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    ._mobileResponsive_mobile {
+        display: block; /* Show left navigation */
+    }
+
+    .non_mobileResponsive_menu {
+        display: none;  /* Hide top navigation */
+    }
+}
+
+/* Landscape View (Top Navigation) */
+@media screen and (max-width: 1500px) and (orientation: landscape) {
+    .non_mobileResponsive_menu {
+        display: block; /* Show top navigation */
+    }
+
+    ._mobileResponsive_mobile {
+        display: none;  /* Hide left navigation */
+    }
+    
+    .searchMobileView {
+        width: 800px !important ;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* header and sub header responsive design */
+    .center-section p {
+        display: none;
+    }
+
+    .left-section img {
+        width: 85px;
+    }
+
+    .k-appbar-section svg {
+        width: 18px;
+    }
+
+    .homeLink {
+        margin-right: 5px;
+    }
+
+    .right-section p {
+        font-size: 12px;
+    }
+
+    .right-section img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .right-section button {
+        width: 30px;
+        font-size: 12px;
+        margin-right: 7px;
+    }
+
+    .logOut-text {
+        display: none;
+    }
+
+    .homeButtonContainer {
+        padding-top: 10% !important;
+        padding-left: 3px !important;
+    }
+
+    .sideBarContainer {
+        width: 60% !important;
+    }
+
+    .sideBarmenuCloseIc {
+        position: relative;
+        left: 172px;
+        bottom: 24px;
+    }
+
+    .mobile_menu {
+        font-size: 12px !important;
+    }
+
+    .homeIcon {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    .cursor {
+        width: 22px;
+    }
+
+    .homeLogo {
+        position: relative;
+        right: 29px;
+        bottom: 12px;
+    }
+    .toolbar {
+        z-index: 1 !important;
+    }
+
+    .sideBarClose {
+        padding-top: 12px;
+    }
+
+    .FormMaincontainer {
+        margin: auto 15px !important;
+    }
+
+    .allIconsforPrimary-btn {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .HeaderButtonsContainer {
+        margin-bottom: 20px !important;
+    }
+
+    .attachemnrt-warningifo-fileinfo {
+        width: 150px !important;
+    }
+
+    .k-multicolumncombobox .k-dropdown-wrap {
+        width: 100%;
+    }
+
+    .k-multicolumncombobox .k-list-container {
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+
+    .k-multicolumncombobox .k-list-item {
+        font-size: 14px;
+    }
+
+    /* home page responsive */
+    .landingPgTopBtnRow {
+        padding: 0 40px 10px 40px;
+    }
+
+    .landingPgTopBtn {
+        margin-bottom: 10px;
+    }
+
+    .datagridPghdrBtns {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    /* search notes */
+ 
+
+    /* passcode responsive */
+    .addPasscode {
+        width: 341px !important;
+        height: 278px !important;
+        top: 108px !important;
+    }
+
+    .mobile_passcode .k-window-content{
+        padding-block: 0 !important;
+    }
+
+    .confirmerror {
+        margin-top: -27px !important;
+    }
+
+    .mobileCSSStyle {
+        width: 350px !important;
+        height: 290px !important;
+    }
+
+    .eye-icon img {
+        top: 29% !important;
+        right: 8% !important;
+        width: 4.5% !important;
+    }
+
+    /* Naren */
+    .dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 250px !important;
+    }
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 250px !important;
+        height: 200px !important;
+    }
+
+    .dialogCloseGist, .dialogCloseGist:hover {
+        max-width: 22% !important;
+    }
+
+    .dialogcontent_Refer .k-dialog {
+        width: 332px !important;
+    }
+
+    .general-comments-Comments {
+        width: 100% !important;
+    }
+
+    .k-dropdowngrid-popup {
+        width: 360px;
+        margin-left: 88px;
+        overflow-y: auto;
+    }
+
+    .responsive-multicolumn .k-dropdown-wrap {
+        width: 100%; /* Full width on mobile */
+        margin-left: 360px;
+    }
+
+    /* Adjust dropdown list's width */
+    .responsive-multicolumn .k-list-container {
+        width: 100%; /* Ensure dropdown list fits the mobile screen */
+    }
+
+
+    .searchNoteContainer .k-animation-container.k-animation-container-shown {
+        left: -71px !important;
+    }
+
+    .k-animation-container .k-animation-container-shown {
+        overflow-x: scroll;
+    }
+
+    .mobiletitle {
+        text-align: left !important;
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+
+    .mobileTitleNewForm {
+        text-align: center !important;
+        width: 100% !important;
+        font-size: 13px;
+    }
+
+    .HeaderButtonsContainer .mobiletitle span {
+        text-align: center !important;
+    }
+
+    .cstDailogValidmsg {
+        margin: 10px;
+        text-Align: center;
+        width: 270px !important;
+    }
+
+    .viewFormSection-1 {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: unset;
+    }
+
+    .SectionHeads-viewForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .eNoteAtrFormHdr {
+        gap: 10px;
+    }
+
+    .addReferee-label-ChangeApprover-label {
+        width: 250px !important;
+        padding: 5px;
+        margin: 0px 25px;
+    }
+
+    .passcode-input {
+        width: 300px !important;
+    }
+
+    #scaleSelectContainer {
+        top: -32px !important;
+        left: -83px !important;
+        position: relative;
+        width: 90px;
+    }
+
+    #toolbarViewerLeft {
+        position: absolute !important;
+        left: -7px !important;
+    }
+
+    #toolbarViewerMiddle {
+        left: 75% !important;
+    }
+
+    .mobileSectionHeads {
+        margin: 10px 20px 20px 30px !important;
+    }
+
+    .k-appbar .k-appbar-section {
+        margin-left: 10px;
+    }
+
+    .landing_Page_Dropdown {
+        width: 350px !important;
+        display: flex;
+        position: relative;
+        left: 10px;
+    }
+
+    .mobile-dropdown {
+        width: 100vw !important; /* Full screen width */
+        max-height: 70vh; /* Adjust the height if needed */
+        overflow-y: auto; /* Enable vertical scroll */
+    }
+
+    .pdfHideandShowIcons {
+        display: none !important;
+    }
+
+    ._markInfocontainer {
+        gap: 5px !important;
+    }
+
+    .non_mobileResponsive {
+        display: none !important;
+    }
+
+    ._mobileResponsive {
+        display: unset !important;
+    }
+
+    .mobileFieldHeight {
+        height: 40px !important;
+    }
+
+    .viewFormhomepageContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 5px !important;
+    }
+
+    .dialogcontent_Comments {
+        width: 250px !important;
+    }
+
+    .dialogcontent_Comments .general-comments-Comments {
+        height: 100px;
+    }
+
+    .general-comments-pageNo,
+    .general-comments-DocRef {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+
+    .mobComments {
+        width: 100% !important;
+        word-wrap: break-word !important;
+    }
+
+    .responsive-table-wrapper {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;  /* iOS scrolling */
+    }
+
+    .mobileCommentButton {
+        display: grid;
+        width: 19%;
+        position: relative;
+        right: 0;
+        left: 72%;
+    }
+
+    .mobileCommentButton button {
+        height: 31px;
+    }
+
+    .approvalform-tableCol-width-2 button {
+        width: 50px !important;
+    }
+
+    .draggable-row {
+        touch-action: pan-x;
+    }
+
+    .addMobile {
+        float: inline-end;
+    }
+
+    .button_center {
+        margin: 0 auto;
+        display: flex;
+        float: right;
+    }
+
+    .viewFormSection-2 {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: unset !important;
+        height: 85vh !important;
+    }
+
+    .approvalAction-foreNoteForm-contaioner {
+        justify-content: center;
+        padding-bottom: 10px;
+        margin-bottom: 2px;
+        flex-wrap: wrap;
+        row-gap: 6px;
+    }
+
+    .eye-icon-view img {
+        left: 42% !important;
+    }
+
+    .mobile_responsive_dragTable {
+        width: 150px !important;
+    }
+
+    .cstDisableGridScroll .k-grid-aria-root {
+        width: 700px !important;
+
+    }
+
+    .cstDisableGridScroll .k-grid {
+        width: 700px !important;
+    }
+
+    .carousel .control-dots {
+        display: none !important;
+    }
+
+    .custom-pie-chart-seperateline {
+        border-bottom: 1px solid lightgrey;
+        border-right: none !important;
+    }
+
+    .carousel .slider {
+        width: 70% !important;
+    }
+
+    .carousel .control-prev.control-arrow {
+        background-color: transparent !important;
+    }
+
+    .mob_table {
+        width: 130%;
+    }
+
+    .viewHeader {
+        padding: 0 8px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-container .k-menu {
+        position: absolute;
+        z-index: 1000;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1366px) {
+    .sideBarContainer {
+        width: 20% !important;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+    .mobileSectionHeads {
+        margin: 10px 20px 30px 30px !important;
+    }
+
+    .homeLogo {
+        position: relative;
+        bottom: 11px;
+        right: 10px;
+    }
+
+    .cursor {
+        width: 22px;
+    }
+
+    .homeIcon {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    .homeButtonContainer {
+        padding-top: 4%;
+        padding-left: 22px !important;
+    }
+
+    .k-grid-sm td,
+    .k-grid-sm th {
+        width: 100px;
+    }
+
+    .sideBarContainer {
+        width: 38%;
+    }
+
+    .mobile_menu {
+        font-size: 12px !important;
+    }
+
+    .searchMobileView {
+        width: 700px;
+    }
+
+    .eye-icon img {
+        position: absolute;
+        top: 28% !important;
+        right: 20%;
+        width: 3%;
+    }
+
+    .viewFormhomepageContainer {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        padding: 0 5px !important;
+    }
+
+    .viewFormSection-1 {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: unset !important;
+    }
+
+    .viewFormSection-2 {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: unset;
+        height: 87vh !important;
+    }
+
+    .attachemnrt-warningifo-fileinfo {
+        width: 150px !important;
+    }
+
+    .landing_Page_Dropdown {
+        width: 350px !important;
+        display: flex !important;
+        position: relative;
+        left: 7px;
+    }
+
+    .pdfHideandShowIcons {
+        display: none;
+    }
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 700px !important;
+        height: 200px !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+    .containerWidth {
+        max-width: 992px !important;
+    }
+    .viewFormSection-2 {
+        width: 60%;
+    }
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 900px !important;
+        height: 290px !important;
+    }
+   
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+    .containerWidth {
+        max-width: 1000px !important;
+    }
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 800px !important;
+    }
+     .searchMobileView {
+        width: 800px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .containerWidth {
+        max-width: 1100px !important;
+        left: 40px !important;
+    }
+    .largeScreen {
+        max-width: 11741px !important;
+        left: 7px !important;
+    }
+     .menuScreen {
+        left: 7px !important;
+    }
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 800px !important;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+    .containerWidth {
+        max-width: 1290px !important;
+        left: 20px !important;
+    }
+    .largeScreen {
+        max-width: 1357px !important;
+        left: 20px !important;
+    }
+    .menuScreen {
+        left: 28px !important;
+    }
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 800px !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1522px) {
+    .homeLogo {
+        position: relative;
+        right: 22px !important;
+    }
+
+    .homeButtonContainer {
+        padding-left: 9px !important;
+    }
+    .menu-container ul {
+        margin-left: 0 !important;
+    }
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 1100px !important;
+        height: 350px !important;
+    }
+     .searchMobileView {
+        width: 1471px !important;
+    }
+}
+@media screen and (min-width: 1101px) and (max-width: 1228px) {
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 950px !important;
+        height: 300px !important;
+    }
+    .searchMobileView {
+        width: 800px !important;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    .homeButtonContainer {
+        padding-left: 7px;
+    }
+
+    .landing_Page_Dropdown {
+        width: 350px !important;
+        display: flex;
+        position: relative;
+        left: 10px;
+    }
+    .menu-container ul {
+        margin-left: 0 !important;
+    }
+    .searchMobileView {
+         width: 1250px !important;
+    }
+}
+
+
+@media screen and (min-width: 1101px) and (max-width: 1228px) {
+    .gist_dialogcontent_ {
+        margin: 25px;
+        text-align: center !important;
+        width: 950px !important;
+        height: 300px !important;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .sideBarContainer {
+        width: 35%;
+    }
+}
+
+/* 2k */
+@media only screen and (min-width: 1706px) and (max-width: 1905px) {
+    .largeScreen {
+        max-width: 1675px !important;
+    }
+
+    .FormMaincontainer {
+        margin: auto 37px !important;
+    }
+    .menuScreen {
+        left: 4%;
+    }
+  
+}
+
+@media only screen and (min-width: 1906px) and (max-width: 2048px) {
+    .largeScreen {
+        max-width: 1893px !important;
+    }
+
+    .FormMaincontainer {
+        margin: auto 37px !important;
+    }
+    .menuScreen {
+        left: 9%;
+    }
+   
+}
+
+@media only screen and (min-width: 2048px) and (max-width: 2303px) {
+    .largeScreen {
+        max-width: 2007px !important;
+    }
+
+    .FormMaincontainer {
+        margin: auto 37px !important;
+    }
+
+    .menuScreen {
+        left: 12%;
+    }
+   
+}
+
+@media only screen and (min-width: 2304px) and (max-width: 2305px) {
+    .largeScreen {
+        max-width: 2239px !important;
+    }
+
+    .FormMaincontainer {
+        margin: auto 37px !important;
+    }
+    .menuScreen {
+        left: 16%;
+    }
+   
+}
+
+@media only screen and (min-width: 2306px) and (max-width: 3072px) {
+    .largeScreen {
+        max-width: 2866px !important;
+    }
+
+    .FormMaincontainer {
+        margin: auto 37px !important;
+    }
+
+    .homeLogo {
+        position: relative;
+        right: 10px !important;
+    }
+    .menuScreen {
+        left: 25%;
+    }
+   
+}
+
+/* 4k */
+@media only screen and (min-width: 3073px) and (max-width: 4608px) {
+    .largeScreen {
+        max-width: 4240px !important;
+    }
+
+    .FormMaincontainer {
+        margin: auto 37px !important;
+    }
+    .menuScreen {
+        left: 33%;
+    }
+}

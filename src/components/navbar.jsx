@@ -1,0 +1,110 @@
+import * as React from "react";
+// import kendo componnets
+import {
+  AppBar,
+  AppBarSection
+} from "@progress/kendo-react-layout";
+import "@progress/kendo-theme-default/dist/all.css"; 
+import { Button } from "@progress/kendo-react-buttons";
+// import images 
+import IndianBank from "../../src/assets/IndianBank.png";
+import user from "../../src/assets/user.png";
+// import external components
+import { useMsal } from "@azure/msal-react";
+import { Link } from "react-router-dom";
+// import internal components
+import { loginRequest,IB_Domain_URL } from "../config.js";
+// Mobile responsive css
+import "../styles/responsiveDesign.css";
+import "../styles/navbar.css";
+
+const Navbar = (props) => {
+  const { instance, accounts } = useMsal();
+  const handleLogin = (loginType) => {
+    if (loginType === "redirect") {
+      instance.loginRedirect(loginRequest).catch((e) => {
+        console.log(accounts[0].name);
+      });
+    }
+  };
+
+  const handleSignOut = () => {
+    instance.logoutRedirect({
+      postLogoutRedirectUri: `${IB_Domain_URL}/logout`,
+    });
+  };
+
+  return (
+    <div>
+      <div>
+        <div style={{ background: "#034ea1" }}>
+          <AppBar  className={`container largeScreen ibNavbar ${props.isViewPage ? 'largeScreen' : ''}`}>
+            <AppBarSection className="left-section">
+              <Link to={IB_Domain_URL} className="homeLink">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_586_1790)">
+                    <path
+                      d="M12.2928 8.25087L4.29061 14.8416V21.9549C4.29061 22.139 4.36377 22.3157 4.49401 22.4459C4.62424 22.5761 4.80087 22.6493 4.98505 22.6493L9.84877 22.6367C10.0323 22.6358 10.2081 22.5622 10.3376 22.4321C10.4671 22.302 10.5397 22.1259 10.5397 21.9423V17.7882C10.5397 17.604 10.6129 17.4274 10.7431 17.2971C10.8734 17.1669 11.05 17.0938 11.2342 17.0938H14.012C14.1961 17.0938 14.3728 17.1669 14.503 17.2971C14.6332 17.4274 14.7064 17.604 14.7064 17.7882V21.9392C14.7061 22.0306 14.7239 22.1212 14.7586 22.2057C14.7934 22.2902 14.8445 22.367 14.909 22.4317C14.9735 22.4964 15.0502 22.5477 15.1346 22.5828C15.219 22.6178 15.3095 22.6359 15.4009 22.6359L20.2628 22.6493C20.447 22.6493 20.6236 22.5761 20.7539 22.4459C20.8841 22.3157 20.9573 22.139 20.9573 21.9549V14.8368L12.9568 8.25087C12.8628 8.17505 12.7456 8.13371 12.6248 8.13371C12.504 8.13371 12.3868 8.17505 12.2928 8.25087ZM24.933 12.7305L21.3045 9.73958V3.72786C21.3045 3.58973 21.2496 3.45726 21.1519 3.35958C21.0543 3.2619 20.9218 3.20703 20.7837 3.20703H18.3531C18.215 3.20703 18.0825 3.2619 17.9848 3.35958C17.8871 3.45726 17.8323 3.58973 17.8323 3.72786V6.87934L13.9464 3.68229C13.5735 3.37542 13.1056 3.20764 12.6226 3.20764C12.1397 3.20764 11.6718 3.37542 11.2989 3.68229L0.31231 12.7305C0.25957 12.7741 0.215936 12.8276 0.183901 12.8881C0.151866 12.9485 0.132059 13.0147 0.12561 13.0828C0.119161 13.151 0.126197 13.2197 0.146316 13.2851C0.166435 13.3505 0.199243 13.4113 0.242865 13.464L1.34964 14.8095C1.39314 14.8624 1.44665 14.9062 1.5071 14.9383C1.56755 14.9705 1.63376 14.9905 1.70193 14.9971C1.77011 15.0036 1.83891 14.9967 1.90439 14.9766C1.96988 14.9566 2.03077 14.9238 2.08358 14.8802L12.2928 6.47135C12.3868 6.39554 12.504 6.3542 12.6248 6.3542C12.7456 6.3542 12.8628 6.39554 12.9568 6.47135L23.1665 14.8802C23.2192 14.9238 23.28 14.9566 23.3454 14.9768C23.4108 14.9969 23.4795 15.0039 23.5476 14.9975C23.6157 14.991 23.6819 14.9712 23.7424 14.9392C23.8028 14.9071 23.8564 14.8635 23.9 14.8108L25.0068 13.4653C25.0503 13.4123 25.083 13.3512 25.1029 13.2855C25.1228 13.2198 25.1295 13.1508 25.1226 13.0825C25.1158 13.0143 25.0955 12.948 25.0629 12.8876C25.0304 12.8272 24.9862 12.7738 24.933 12.7305Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_586_1790">
+                      <rect
+                        width="25"
+                        height="25"
+                        fill="white"
+                        transform="translate(0.123901 0.427246)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </Link>
+              <Link to={IB_Domain_URL}>
+                <img alt="IB logo" src={IndianBank} />
+              </Link>
+            </AppBarSection>
+            <AppBarSection className="center-section">
+              <p>IB Smart Office - eNote</p>
+            </AppBarSection>
+            <AppBarSection className="right-section">
+              <p>{accounts[0]?.name}</p>
+
+              {accounts.length === 0 ? (
+                <Button
+                  className="logOut"
+                  fillMode="outline"
+                  onClick={() => handleLogin("redirect")}
+                >
+                  <span className="k-icon k-icon-sm k-font-icon k-i-login cursor allIconsforPrimary-btn"></span>
+                  {/* Mobile View added */}
+                  <span className="logOut-text"> Log In</span>
+                </Button>
+              ) : (
+                <>
+                  <img alt="IB logo" src={user} />
+                  <Button
+                    className="logOut"
+                    fillMode="outline"
+                    onClick={handleSignOut}
+                  >
+                    <span className="k-icon k-icon-sm k-font-icon k-i-logout cursor allIconsforPrimary-btn"></span>
+                    {/* Mobile View added */}
+                    <span className="logOut-text">Log Out</span>
+                  </Button>
+                </>
+              )}
+            </AppBarSection>
+          </AppBar>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Navbar;

@@ -1,0 +1,86 @@
+.homepageHead {
+  margin: 10px 0px;
+}
+
+.homepageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.homesection-1 {
+  width: 40%;
+  padding: 0 10px;
+}
+
+.homesection-2 {
+  width: 60%;
+  height: 85vh;
+  margin: 0 5px 10px 20px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.k-expander-header {
+  background-color: aliceblue;
+}
+
+.k-expander-title {
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.k-expanded,
+.k-expander {
+  margin-top: 0px !important;
+}
+
+.k-toolbar {
+  background-color: aliceblue;
+}
+
+.k-button-solid-base.k-selected {
+  display: none;
+}
+
+.callbackcloseButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.callbackButton {
+  background: #023E8A;
+  color: #fff;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.close {
+  background-color: rgb(147, 144, 144);
+  color: black;
+  font-weight: bold;
+}
+
+/* Landing page Charts */
+.custom-committeeNote-charts-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.custom-pie-chart-seperateline {
+  border-right: 1px solid lightgrey;
+}

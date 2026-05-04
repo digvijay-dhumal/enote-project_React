@@ -1,0 +1,108 @@
+/* ===================== LAYOUT ===================== */
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.body-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content-layout {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* ===================== GRID WRAPPER ===================== */
+.grid-wrapper {
+    flex: 1;
+    padding: 12px 16px;
+    overflow: hidden;
+}
+
+/* ===================== GRID ===================== */
+.exact-grid {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    background: #ffffff;
+}
+
+/* 🔥 FORCE FULL WIDTH TABLE (MAIN FIX) */
+.exact-grid .k-grid-table,
+.exact-grid .k-grid-header table,
+.exact-grid .k-grid-content table {
+    width: 100% !important;
+    min-width: 100% !important;
+    table-layout: auto !important;
+}
+
+/* REMOVE KENDO TABLE FIX */
+.k-grid table {
+    table-layout: auto !important;
+}
+
+/* GRID CONTENT SCROLL */
+.exact-grid .k-grid-content {
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/* GRID HEADER */
+.exact-grid .k-grid-header {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+/* CENTER CELL */
+.center-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* SIGNATURE IMAGE */
+.sign-preview {
+    width: 140px;
+    height: 60px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* ZEBRA STRIPES */
+.k-grid tbody tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+/* FIXED PAGER */
+.k-grid-pager {
+    position: sticky;
+    bottom: 0;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    z-index: 2;
+}
+
+/* PREVENT COLUMN COLLAPSE */
+.k-grid th,
+.k-grid td {
+    white-space: nowrap;
+}
+
+/* ===================== FOOTER ===================== */
+footer,
+.pgFooterContainer {
+    flex-shrink: 0;
+}
+
+
+.table-dta{
+    height: 100%;
+}
+

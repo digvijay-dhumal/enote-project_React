@@ -1,0 +1,154 @@
+.ibFooter {
+  padding: 25px 0px;
+   background-color: #034ea1;
+   text-align: center;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   height: 30px;
+   align-items: center;
+   z-index: 999;
+}
+
+/* .ibFooterimages{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 6%;
+     } */
+.ibFooterimages img {
+   margin: 0 5px;
+}
+
+.copyRight {
+   margin-bottom: 0px;
+   width: 100%;
+}
+
+/* loader css */
+@keyframes k-loading-animation {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.k-i-loading {
+   font-size: 60px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #034ea1;
+}
+
+.k-i-loading::before,
+.k-i-loading::after {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   display: inline-block;
+   content: "";
+   box-sizing: inherit;
+   border-radius: 50%;
+   border-width: 3em;
+   border-style: solid;
+   border-color: #034ea1;
+   border-top-color: transparent;
+   border-bottom-color: transparent;
+   background-color: transparent;
+}
+
+.k-i-loading::before {
+   margin-top: -.5em;
+   margin-left: -.5em;
+   width: 1em;
+   height: 1em;
+   animation: k-loading-animation .7s linear infinite;
+   border-width: 5px;
+}
+
+.k-i-loading::after {
+   margin-top: -.25em;
+   margin-left: -.25em;
+   width: .5em;
+   height: .5em;
+   animation: k-loading-animation reverse 1.4s linear infinite;
+   border-width: 5px;
+}
+
+.k-icon.k-i-loading.k-example-loading::before,
+.k-icon.k-i-loading::after {
+   content: "";
+}
+
+
+
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(72, 67, 67, 0.6);
+   z-index: 9999;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.overlay-content {
+   text-align: center;
+}
+
+.custom-progress-bar {
+   width: 400px;
+   height: 20px;
+}
+.custom-progress-bar .k-progressbar-value {
+   background-color: #3f51b5 !important;
+   /* Change this to your desired color */
+}
+
+.k-progress-status {
+   font-weight: bold;
+   font-size: 16px
+}
+
+
+.custom-progress-bar .k-progressbar-value {
+   position: relative;
+   overflow: hidden;
+}
+
+.custom-progress-bar .k-progressbar-value::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: repeating-linear-gradient(135deg,
+         rgba(255, 255, 255, 0.2) 0px,
+         rgba(255, 255, 255, 0.2) 10px,
+         transparent 10px,
+         transparent 20px);
+   animation: moveStripes 1s linear infinite;
+   z-index: 1;
+   pointer-events: none;
+}
+
+@keyframes moveStripes {
+   0% {
+      background-position: 0 0;
+   }
+
+   100% {
+      background-position: 40px 0;
+   }
+}

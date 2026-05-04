@@ -1,0 +1,283 @@
+:root {
+   --dir-factor: 1;
+   --inline-start: left;
+   --inline-end: right;
+   --toolbar-icon-opacity: 0.7;
+   --main-color: rgb(12 12 13);
+   --toolbar-icon-bg-color: rgb(0 0 0);
+   --toolbar-icon-hover-bg-color: rgb(0 0 0);
+   --toolbar-bg-color: rgb(249 249 250);
+   --toolbar-border-color: rgb(184 184 184);
+   --toolbar-box-shadow: 0 1px 0 var(--toolbar-border-color);
+   --toolbar-border-bottom: none;
+   --button-hover-color: rgb(221 222 223);
+   --toggled-btn-color: rgb(0 0 0);
+   --toggled-btn-bg-color: rgb(0 0 0 / 0.3);
+   --toggled-hover-active-btn-color: rgb(0 0 0 / 0.4);
+   --toggled-hover-btn-outline: none;
+   --dropdown-btn-bg-color: rgb(215 215 219);
+   --dropdown-btn-border: none;
+   --toolbarButton-menuArrow-icon: url("../assets/toolbarButton-menuArrow.svg");
+   --toolbarButton-pageUp-icon: url("../assets/toolbarButton-pageUp.svg");
+   --toolbarButton-pageDown-icon: url("../assets/toolbarButton-pageDown.svg");
+   --toolbarButton-zoomOut-icon: url("../assets/toolbarButton-zoomOut.svg");
+   --toolbarButton-zoomIn-icon: url("../assets/toolbarButton-zoomIn.svg");
+   --toolbarButton-print-icon: url("../assets/toolbarButton-print.svg");
+   --toolbarButton-download-icon: url("../assets/toolbarButton-download.svg");
+}
+
+:root:dir(rtl) {
+   --dir-factor: -1;
+   /*#if !MOZCENTRAL*/
+   --inline-start: right;
+   --inline-end: left;
+   /*#endif*/
+}
+ 
+#mainContainer {
+   position: absolute;
+   inset: 0;
+   min-width: 350px;
+}
+
+.toolbar {
+   position: relative;
+   inset-inline: 0;
+   z-index: 9;
+   cursor: default;
+   font: message-box;
+}
+ 
+:is(.toolbar)
+   :is(input, button, select) {
+   outline: none;
+  font-size: 13px !important;
+}
+ 
+#toolbarContainer {
+   width: 100%;
+   position: relative;
+   height: 32px;
+   background-color: var(--toolbar-bg-color);
+   box-shadow: var(--toolbar-box-shadow);
+   border-bottom: var(--toolbar-border-bottom);
+}
+ 
+#toolbarViewer {
+   height: 35px;
+   background-color: aliceblue;
+}
+ 
+#toolbarViewerMiddle {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+ 
+#toolbarViewerLeft,
+#toolbarSidebarLeft {
+   float: var(--inline-start);
+}
+#toolbarViewerRight,
+#toolbarSidebarRight {
+   float: var(--inline-end);
+}
+ 
+#toolbarViewerLeft > *,
+#toolbarViewerMiddle > *,
+#toolbarViewerRight > *,
+#toolbarSidebarLeft *,
+#toolbarSidebarRight * {
+   position: relative;
+   float: var(--inline-start);
+}
+ 
+#toolbarViewerLeft {
+   padding-inline-start: 1px;
+}
+#toolbarViewerRight {
+   padding-inline-end: 1px;
+}
+#toolbarSidebarRight {
+   padding-inline-end: 2px;
+}
+ 
+.splitToolbarButton {
+   margin: 2px;
+   display: inline-block;
+}
+ 
+.toolbarButton{
+   border: none;
+   background: none;
+   width: 28px;
+   height: 28px;
+   outline: none;
+}
+
+.toolbarButton > span {
+   display: inline-block;
+   width: 0;
+   height: 0;
+   overflow: hidden;
+}
+ 
+:is(.toolbarButton)[disabled] {
+   opacity: 0.5;
+}
+ 
+.splitToolbarButton > .toolbarButton:is(:hover, :focus-visible),.dropdownToolbarButton:hover {
+   background-color: var(--button-hover-color);
+}
+.splitToolbarButton > .toolbarButton {
+   position: relative;
+   margin: 0;
+   float: var(--inline-start);
+}
+
+.toolbarButton,.dropdownToolbarButton {
+   min-width: 16px;
+   margin: 2px 1px;
+   padding: 2px 6px 0;
+   border: none;
+   border-radius: 2px;
+   color: var(--main-color);
+   font-size: 12px;
+   line-height: 14px;
+   user-select: none;
+   cursor: default;
+   box-sizing: border-box;
+}
+ 
+.toolbarButton:is(:hover, :focus-visible) {
+   background-color: var(--button-hover-color);
+}
+ 
+:is(.toolbarButton).toggled,.splitToolbarButton.toggled > .toolbarButton.toggled {
+   background-color: var(--toggled-btn-bg-color);
+   color: var(--toggled-btn-color);
+}
+ 
+:is(.toolbarButton).toggled:hover,.splitToolbarButton.toggled > .toolbarButton.toggled:hover {
+   outline: var(--toggled-hover-btn-outline) !important;
+}
+ 
+:is(.toolbarButton).toggled::before {
+   background-color: var(--toggled-btn-color);
+}
+ 
+:is(.toolbarButton).toggled:hover:active,.splitToolbarButton.toggled > .toolbarButton.toggled:hover:active {
+   background-color: var(--toggled-hover-active-btn-color);
+}
+ 
+.dropdownToolbarButton {
+   display: flex;
+   width: fit-content;
+   padding: 0;
+   border: var(--dropdown-btn-border);
+}
+.dropdownToolbarButton::after {
+   top: 6px;
+   inset-inline-end: 6px;
+   pointer-events: none;
+   mask-image: var(--toolbarButton-menuArrow-icon);
+}
+ 
+.dropdownToolbarButton > select {
+   appearance: none;
+   width: inherit;
+   min-width: inherit;
+   height: 25px;
+   font-size: 12px;
+   color: var(--main-color);
+   margin: 0;
+   padding-block: 1px 2px;
+   padding-inline: 6px 38px;
+   border: none;
+   margin-top: 3px;
+}
+ 
+:is(.toolbarButton)::before,.dropdownToolbarButton::after {
+   position: absolute;
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   content: "";
+   background-color: var(--toolbar-icon-bg-color);
+   mask-size: cover;
+}
+ 
+.dropdownToolbarButton:is(:hover, :focus-visible, :active)::after {
+   background-color: var(--toolbar-icon-hover-bg-color);
+}
+ 
+.toolbarButton::before {
+   opacity: var(--toolbar-icon-opacity);
+   top: 6px;
+   left: 6px;
+}
+ 
+.toolbarButton:is(:hover, :focus-visible)::before {
+   background-color: var(--toolbar-icon-hover-bg-color);
+}
+ 
+#previous::before {
+   mask-image: var(--toolbarButton-pageUp-icon);
+}
+ 
+#next::before {
+   mask-image: var(--toolbarButton-pageDown-icon);
+}
+ 
+#zoomOut::before {
+   mask-image: var(--toolbarButton-zoomOut-icon);
+}
+ 
+#zoomIn::before {
+   mask-image: var(--toolbarButton-zoomIn-icon);
+}
+ 
+:is(#print, #secondaryPrint)::before {
+   mask-image: var(--toolbarButton-print-icon);
+}
+ 
+:is(#download)::before {
+   mask-image: var(--toolbarButton-download-icon);
+}
+ 
+#pageNumber {
+   text-align: end;
+   width: 40px;
+   background-size: 0 0;
+   transition-property: none;
+}
+ 
+.toolbarLabel {
+   min-width: 16px;
+   padding: 7px;
+   margin: 2px;
+   border-radius: 2px;
+   color: var(--main-color);
+   font-size: 12px;
+   line-height: 14px;
+   text-align: left;
+   user-select: none;
+   cursor: default;
+}
+
+#numPages.toolbarLabel {
+   padding-inline-start: 3px;
+}
+
+.pdf-viewer {
+   scroll-behavior: smooth !important;
+}
+.gistPdf {
+   overflow-y: scroll;
+   height: 100%;
+   border: 1px solid #ccc;
+}
+.pdf-viewer-css {
+   overflow-y: scroll;
+   height: 81vh;
+}

@@ -1,0 +1,17 @@
+.Check-box-field {
+  display: flex;
+  align-items: center;
+      gap: 11px;
+  cursor: pointer;
+      margin: 0px 0px 6px 6px;
+}
+
+.big-checkbox {
+  transform: scale(2.2);
+  margin-top: 10px;
+}
+
+.ArchiveNote{
+    position: relative;
+    top: 4px;
+}
